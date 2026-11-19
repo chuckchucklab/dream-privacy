@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream — Privacy Policy</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem 4rem; line-height: 1.55; color: #111; }
+    h1, h2, h3, h4 { font-family: system-ui, sans-serif; }
+    h1 { font-size: 1.6rem; }
+    h2 { margin-top: 2.4rem; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ccc; padding: 0.4rem 0.55rem; text-align: left; vertical-align: top; }
+    a { color: #0b57d0; }
+    .meta { color: #444; }
+  </style>
+</head>
+<body>
+  <h1>Dream — Privacy Policy / 개인정보처리방침</h1>
+  <p class="meta"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta">Public URL: <a href="https://chuckchucklab.github.io/dream-privacy/">https://chuckchucklab.github.io/dream-privacy/</a></p>
+  <p class="meta">Developer and personal information protection officer: Solodep. It covers closed test 0.3.1 of <code>io.github.chuckchucklab.dream</code>. The AI section does not apply to this version.</p>
+  <p class="meta">Effective date: November 19, 2026.</p>
+
+  <section id="ko" lang="ko">
+  <h2>한국어</h2>
+  <p><strong>시행일: 2026-11-19</strong></p>
+<p>개발자는 Solodep입니다. 패키지 이름은 <code>io.github.chuckchucklab.dream</code>입니다. 이 방침은 비공개 테스트 0.3.1에 적용됩니다. 게시 주소는 https://chuckchucklab.github.io/dream-privacy/ 입니다.</p>
+<p>Dream(이하 "이 앱")은 꿈을 적고, 휴대폰 안의 해몽 사전으로 풀고, 기록을 남기는 Android 앱입니다. 풀이는 두 갈래입니다. 하나는 한국 해몽이고, 다른 하나는 마음 읽기입니다. 상징 300개 사전, 아침 알림, 홈 화면 위젯, 앱 잠금이 있습니다. 0.3.1은 AI 해몽, 이어서 묻기, 태몽 모드를 보여 주지 않습니다. 꿈 적기, 사전, 기록, 알림, 위젯, 앱 잠금은 서버 없이 동작합니다. 구독 결제와 상태 확인만 이 기기의 Google Play가 처리합니다. 이 버전은 개발자 서버로 아무것도 보내지 않습니다.</p>
+<p>해몽은 재미와 자기 돌아보기입니다. 앞날을 맞힌다고 하지 않고, 의료·법률·금융 조언이 아닙니다.</p>
+<h3>1. 요약</h3>
+<ul><li>꿈 글, 날짜, 느낌, 선명도, 붙인 상징, 설정, Google Play가 이 기기에 알려 주는 구독 여부는 이 휴대폰에 남습니다.</li><li>0.3.1은 그 정보를 개발자 서버로 보내지 않습니다. 이름, 계정, 이메일, 카드 번호를 묻지 않습니다.</li><li>최근 7일 기록은 무료로 보입니다. 그보다 오래된 꿈은 지우지 않고 잠가 둡니다. 구독하면 그 꿈과 패턴이 열립니다. 가격은 Google Play에 나옵니다.</li><li>광고, 분석, 비정상 종료 보고 SDK가 없습니다. 개인정보를 팔지 않고, 광고 프로필을 만들지 않습니다.</li><li>아래 "AI 해몽을 켜는 버전"은 0.3.1에 적용되지 않습니다. 그 버전이 스토어에 나가기 전에 이 방침의 그 절을 현재 동작으로 고치고 시행일을 바꿉니다.</li></ul>
+<h3>2. 처리하는 정보</h3>
+<p>0.3.1이 기기에 남기는 것은 다음입니다. 개발자에게 전송하지 않습니다.</p>
+<table>
+<tr><th>항목</th><th>내용</th><th>목적</th><th>보관</th></tr>
+<tr><td>꿈</td><td>날짜, 글, 느낌, 선명도, 잊었다는 표시, 붙인 상징. 데이터베이스 이름은 <code>dreams.db</code></td><td>기록과 기기 안 풀이</td><td>사용자가 지우거나 앱을 삭제할 때까지</td></tr>
+<tr><td>설정</td><td>언어, 갈래 순서, 아침 알림 시각, 앱 잠금, 첫 안내를 봤는지. DataStore 이름 <code>dream_settings</code></td><td>앱 설정</td><td>앱을 삭제할 때까지. 설정에서 알림과 잠금은 끌 수 있음</td></tr>
+<tr><td>구독</td><td>Play가 알려 준 구독 여부와 요금제 아이디. 파일 이름 <code>dream_billing_access.xml</code>. 구매 토큰 원문은 디스크에 쓰지 않음</td><td>7일보다 오래된 꿈과 패턴을 열기</td><td>구독 상태가 바뀌거나 앱을 삭제할 때까지</td></tr>
+</table>
+<p>느낌은 무서움, 불안, 슬픔, 기쁨, 설렘, 이상함, 보통 가운데 고른 값입니다. 건강 앱이 아니고, Health Connect를 쓰지 않으며, 이 값을 기기 밖으로 보내지 않습니다.</p>
+<p>이름은 묻지 않습니다. 0.3.1은 나이도 묻지 않습니다. 만 19세 확인은 AI 해몽을 켜는 버전에만 있습니다.</p>
+<p>아침 알림 문구에는 꿈 내용이 들어가지 않습니다. 홈 화면 위젯에는 사전 한 줄이나 적기 안내만 뜨고, 꿈 글은 보이지 않습니다. 홈 화면을 볼 수 있는 사람은 그 한 줄을 볼 수 있습니다. 그 표시는 개발자에게 보내는 전송이 아닙니다.</p>
+<p>앱 잠금은 기기의 생체 인식 또는 화면 잠금입니다. 지문 원문과 생체 템플릿은 앱이 받지 않고 저장하지 않습니다.</p>
+<h3>3. 인터넷과 권한</h3>
+<p>0.3.1은 개발자 서버에 접속하지 않습니다. 구독 결제와 상태 확인은 이 기기의 Google Play가 처리합니다. 카드 번호는 Google Play가 사용자에게서 직접 받습니다. 이 앱은 카드 번호를 받지 않고 저장하지 않습니다. Google이 처리하는 결제 정보는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+<p>아침 알림을 켤 때 알림 권한(<code>POST_NOTIFICATIONS</code>)을 묻습니다. 앱 잠금을 켤 때 생체 인식(<code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code>)을 씁니다. 기기를 다시 켠 뒤 아침 알림을 다시 맞추는 데 <code>RECEIVE_BOOT_COMPLETED</code>를 쓸 수 있습니다. 이 권한은 WorkManager가 넣습니다. Play 결제 권한(<code>com.android.vending.BILLING</code>)과 <code>ACCESS_NETWORK_STATE</code>는 Google Play 결제 라이브러리와 함께 옵니다.</p>
+<p>스토어의 권한 목록에 네트워크 접근이 보이면, 결제 라이브러리이거나 빌드에 남아 있는 <code>INTERNET</code> 선언입니다. 0.3.1은 그 권한으로 개발자 서버를 부르지 않습니다. 광고 ID, 위치, 연락처, 카메라, 마이크, 사진은 쓰지 않습니다. 포그라운드 서비스와 전체 화면 인텐트는 시작하지 않습니다.</p>
+<h3>4. 백업</h3>
+<p>이 앱은 꿈 기록을 직접 업로드하지 않습니다. 클라우드 백업에서는 <code>dreams.db</code>, <code>dreams.db-wal</code>, <code>dreams.db-shm</code>, <code>dream_billing_access.xml</code>을 뺍니다. 자동 백업이 켜져 있으면, 빼지 않은 파일(설정 DataStore 등)은 기기 설정에 따라 사용자의 Google 계정 백업에 들어갈 수 있습니다. 백업은 Android 시스템이 처리하고, 개발자는 그 복사본을 읽지 못합니다. 보관과 삭제는 백업 설정과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+<p>기기 간 전송 규칙은 따로 적혀 있지 않습니다. 휴대폰을 바꿀 때 꿈 기록이 함께 옮겨질 수 있습니다. 그 복사도 개발자가 읽지 못합니다.</p>
+<h3>5. 제공, 위탁, 국외 이전</h3>
+<p>0.3.1에서 개발자가 개인정보를 제3자에게 제공하거나 처리위탁하지 않습니다. 개발자가 국외로 보내는 개인정보도 없습니다. 결제 정보는 위 3절대로 Google Play가 사용자에게서 직접 받습니다.</p>
+<h3>6. 하지 않는 것</h3>
+<ul><li>광고를 넣지 않습니다. 정보를 팔지 않고 광고 프로필을 만들지 않습니다.</li><li>계정을 만들지 않으며 로그인을 요구하지 않습니다.</li><li>분석 도구나 비정상 종료 보고 SDK를 넣지 않습니다. 비정상 종료는 Play vitals로만 봅니다.</li><li>광고 ID, 위치, 연락처, 카메라, 마이크, 사진에 접근하지 않습니다.</li><li>카드 번호를 받지 않습니다.</li><li>0.3.1은 꿈 글, 상징 줄, 구매 토큰, 기기 식별자를 개발자 서버로 보내지 않습니다.</li></ul>
+<h3>7. 삭제와 권리</h3>
+<ul><li>꿈 하나를 지우면 그 기록이 이 기기에서 삭제됩니다.</li><li>설정의 기록 전체 삭제는 이 기기의 꿈을 지웁니다. 서버에 지울 행은 이 버전에 없습니다.</li><li>앱을 삭제하면 그 기기의 앱 데이터가 삭제됩니다.</li><li>Google 백업이나 기기 간 전송으로 생긴 복사본은 사용자의 Google 계정과 Android 백업 설정에서 관리합니다. 이 앱은 그 복사본을 지우지 못합니다.</li><li>사용자는 자신의 개인정보를 열람하고, 정정하고, 삭제하고, 처리를 멈추게 할 수 있습니다. 기기 안의 꿈은 앱에서 지웁니다. 그 밖은 아래 메일로 요청합니다. 다른 법령이 보관을 정한 경우가 아니면 삭제를 거절하지 않습니다. 받아들이지 못하면 이유를 알립니다.</li></ul>
+<p>종이로 된 개인정보는 없습니다. 전자 기록은 복구할 수 없게 지웁니다.</p>
+<h3>8. 아동</h3>
+<p>이 앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다. Google Play 가족 정책에서도 아동을 대상으로 하지 않습니다. 만 14세 미만의 개인정보는 받지 않습니다. AI 해몽은 이 버전에 없고, 나중에 켜면 만 19세 이상만 쓸 수 있습니다.</p>
+<h3>9. 안전 조치</h3>
+<p>꿈 기록은 앱 전용 저장소에 있습니다. 0.3.1은 그 기록을 개발자 서버로 보내지 않습니다. 구매 토큰 원문은 디스크에 쓰지 않습니다. 생체 정보는 기기 잠금 장치에만 있습니다. 광고, 분석, 비정상 종료 보고 SDK가 없습니다.</p>
+<h3>10. 변경</h3>
+<p>이 방침이 바뀌면 시행일을 갱신합니다. 중요한 변경은 앱 업데이트 설명에 함께 안내합니다. AI 해몽을 켜는 버전은 아래 절을 현재 동작으로 고친 뒤에 게시합니다.</p>
+<h3>11. 문의</h3>
+<p>개인정보 보호책임자: Solodep</p>
+<p><a href="mailto:chuckchuck.lab+dream@gmail.com">chuckchuck.lab+dream@gmail.com</a></p>
+<h3>12. 권익침해 구제</h3>
+<p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다. 11절의 개인정보 보호책임자에게 먼저 알릴 수도 있습니다.</p>
+<ul><li>개인정보침해 신고센터: 118 (국번 없이), <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li><li>개인정보분쟁조정위원회: 1833-6972 (국번 없이), <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li></ul>
+<h3>AI 해몽을 켜는 버전 (0.3.1에는 적용하지 않음)</h3>
+<p>이 절은 나중 버전을 설명합니다. 0.3.1은 AI 해몽, 이어서 묻기, 태몽 모드를 숨기고, 아래 항목을 어디에도 보내지 않습니다. 그 버전을 스토어에 올릴 때 이 절을 현재 동작으로 바꾸고, 데이터 보안과 콘텐츠 등급과 스토어 문구를 같이 고칩니다.</p>
+<p>AI 해몽은 기본으로 꺼져 있습니다. 처음 쓸 때 무엇을 보내는지 보여 주고 동의를 받습니다. 만 19세 이상이라고 확인한 뒤에만 열립니다. 동의하지 않거나 만 19세 미만이면 AI만 열리지 않고, 꿈 적기와 사전 풀이는 그대로입니다.</p>
+<p>AI를 쓸 때만 다음이 개발자 서버로 갑니다. 이름, 계정, 이메일, 다른 꿈, Android ID 원문, 카드 번호는 보내지 않습니다.</p>
+<table>
+<tr><th>보내는 것</th><th>보내지 않는 것</th></tr>
+<tr><td>그 꿈의 글(2000자까지), 고른 느낌, 선명도, 맞은 상징 최대 12개의 줄, 갈래 순서, 태몽 여부, 표시 언어, 지역 코드(있을 때), 최근 대화 10줄, 구매 토큰, 기기 키 해시</td><td>이름, 계정, 이메일, 다른 꿈, Android ID 원문, 카드 번호</td></tr>
+</table>
+<p>기기 키는 <code>dream-free-v1:</code>와 Android ID를 이은 값의 SHA-256이고, 64자의 소문자 hex입니다. Android ID 원문은 나가지 않습니다. 상태만 물을 때는 구매 토큰과 기기 키 해시만 보냅니다. 그 둘은 OpenAI로 보내지 않습니다. 구매 토큰은 구독 확인을 위해 서버에서 Google Play Developer API로 전달되고, 서버는 토큰 원문을 저장하지 않습니다. 저장하는 것은 구매 토큰과 <code>linkedPurchaseToken</code>의 SHA-256뿐입니다.</p>
+<p>서버는 Cloudflare에서 동작하는 Worker <code>dream-chat</code>입니다. 답을 쓸 때 OpenAI를 부릅니다. 모델은 <code>gpt-6-luna</code>이고 <code>store: false</code>로 부릅니다. 서버는 꿈 글, 상징 줄, 해몽, 대화 원문을 저장하지 않습니다. 로그에도 그 원문을 남기지 않고 오류 코드만 남깁니다.</p>
+<p>자해나 학대처럼 보이는 글이면 서버는 모델 답을 버리고 도움받을 곳을 돌려주며, 그 호출의 횟수는 쓰지 않거나 되돌립니다. 그 글은 신고하지 않는 한 저장하지 않습니다. 한국어 연락처는 109, 1577-0199, 119, 112입니다. 영어는 988과 findahelpline.com입니다. 영어라도 지역이 KR이면 한국 번호를 앞에 둡니다.</p>
+<p><strong>국외 이전.</strong> AI를 켠 경우에만 아래 회사가 처리합니다. 동의하지 않으면 보내지 않습니다. 근거는 개인정보 보호법 제28조의8 제1항 제3호(계약 이행에 필요한 처리위탁·보관)입니다. 전송은 HTTPS입니다.</p>
+<table>
+<tr><th>받는 곳</th><th>나라</th><th>항목</th><th>목적</th><th>보관</th></tr>
+<tr><td>Cloudflare, Inc. 개발자 서버. privacyquestions@cloudflare.com</td><td>미국. 요청은 가까운 데이터센터에서 처리될 수 있음</td><td>위 표의 보내는 것</td><td>구매 확인, 횟수, 해몽 전달, 신고 보관</td><td>꿈 글과 대화 원문은 저장하지 않음. 신고는 90일. 횟수와 토큰 해시는 아래</td></tr>
+<tr><td>OpenAI. dsar@openai.com</td><td>미국</td><td>꿈 글, 느낌, 선명도, 상징 줄, 갈래 순서, 태몽 여부, 최근 대화, 표시 언어. 구매 토큰과 기기 키 해시는 보내지 않음</td><td>답 작성. <code>gpt-6-luna</code>, <code>store: false</code></td><td>API 데이터는 학습 동의가 없으면 학습에 쓰지 않는다는 공식 안내가 있음. 오남용 감시 기록은 기본 최대 30일이고 더 길어질 수 있음. 이 앱의 Zero Data Retention 승인은 확인하지 않음. <code>store: false</code>는 그 승인이 아님</td></tr>
+</table>
+<p>서버가 남기는 것은 다음입니다.</p>
+<ul><li>신고한 질문(꿈 글 또는 이어서 물은 말), 답, 이유, 언어는 90일 뒤 지웁니다. 이유는 부정확, 불쾌, 위험, 기타입니다. 요청하면 그 전에 지웁니다.</li><li>무료 횟수는 기기 키마다 평생 3번입니다. 구독이 유효하면 첫 사용부터 24시간마다 20번입니다. 그 행은 마지막 사용부터 1년(365일) 뒤 지웁니다.</li><li>토큰 해시는 만료를 알면 그 시각부터 1년, 모르면 마지막 확인부터 1년 뒤 지웁니다. 토큰 원문은 저장하지 않습니다.</li><li>구매 확인 캐시는 맞으면 1시간, 아니면 5분 동안 다시 씁니다. 1시간이 지난 캐시 행은 정리 때 지웁니다.</li><li>서울 날짜의 하루 총량 횟수는 글 없이 숫자만 두고, 그 날짜가 지나면 지웁니다.</li></ul>
+<p>정리는 한국 시각 00:10입니다.</p>
+<p>삭제는 다음입니다.</p>
+<ul><li>설정의 "이 기기의 AI 기록 지우기"는 기기에 저장된 AI 해몽과 대화를 지웁니다. 꿈은 남습니다. 서버 행은 지우지 않습니다.</li><li>설정의 "서버에 신고 삭제를 요청"은 <code>POST /v1/forget</code>으로 그 기기 키와 구매 토큰에 묶인 신고, 횟수, 토큰 해시를 지웁니다. Play에 다시 묻지 않습니다. 무료 3번이 다시 열릴 수 있습니다. 지울 행이 없어도 성공입니다.</li><li>꿈 전체 삭제와 앱 삭제는 기기만 지웁니다. 서버의 해시와 신고는 위 요청이나 <a href="mailto:chuckchuck.lab+dream@gmail.com">chuckchuck.lab+dream@gmail.com</a>으로 지웁니다.</li></ul>
+<p>지역 코드는 위기 연락처 순서에만 쓰고, 위치 정보로 저장하지 않습니다. 모델에 넘기는 글에는 지역 코드가 있을 때만 Region 줄을 붙입니다.</p>
+  </section>
+
+  <section id="en" lang="en">
+  <h2>English</h2>
+  <p><strong>Effective date: November 19, 2026</strong></p>
+<p>The developer is Solodep. The package name is <code>io.github.chuckchucklab.dream</code>. This policy applies to closed test 0.3.1. It is published at https://chuckchucklab.github.io/dream-privacy/.</p>
+<p>Dream ("the app") is an Android app for writing down a dream, reading it with an on-device dictionary, and keeping a journal. There are two readings: Korean dream lore, and a mind reading. The app includes a dictionary of 300 symbols, a morning reminder, a home-screen widget, and an app lock. Version 0.3.1 does not show an AI reading, follow-up chat, or conception-dream mode. Writing, the dictionary, the journal, the reminder, the widget, and the lock work with no server. Only subscription purchase and status are handled by Google Play on this device. This version sends nothing to the developer's server.</p>
+<p>A reading is for fun and for looking back at yourself. It does not claim to foretell events, and it is not medical, legal, or financial advice.</p>
+<h3>1. In short</h3>
+<ul><li>Dream text, the date, feelings, clarity, attached symbols, settings, and the subscription state Google Play reports on this device stay on this phone.</li><li>Version 0.3.1 does not send that information to the developer's server. The app does not ask for a name, an account, an email address, or a card number.</li><li>The last 7 days of the journal are free to read. Older dreams stay on the phone and are locked. A subscription opens those dreams and the patterns. Google Play shows the price.</li><li>There are no ads, no analytics SDK, and no crash-reporting SDK. The information is not sold and is not used to build an advertising profile.</li><li>The section "When the AI reading is turned on" does not apply to 0.3.1. Before that version ships, that section is rewritten as current behavior and the effective date changes.</li></ul>
+<h3>2. Information the app handles</h3>
+<p>Version 0.3.1 keeps the following on the device. It is not sent to the developer.</p>
+<table>
+<tr><th>Item</th><th>What</th><th>Purpose</th><th>Retention</th></tr>
+<tr><td>Dream</td><td>Date, text, feelings, clarity, a forgotten mark, attached symbols. The database name is <code>dreams.db</code></td><td>The journal and the on-device reading</td><td>Until you delete it or uninstall the app</td></tr>
+<tr><td>Settings</td><td>Language, lens order, reminder time, app lock, whether the first screen was seen. The DataStore name is <code>dream_settings</code></td><td>App settings</td><td>Until you uninstall. The reminder and the lock can be turned off in Settings</td></tr>
+<tr><td>Subscription</td><td>Whether Play reports a subscription, and the plan id. The file name is <code>dream_billing_access.xml</code>. The purchase token itself is not written to disk</td><td>Unlocking dreams older than 7 days, and patterns</td><td>Until the subscription state changes or you uninstall</td></tr>
+</table>
+<p>A feeling is one of scared, anxious, sad, happy, excited, strange, or neutral. This is not a health app, it does not use Health Connect, and it does not send these values off the device.</p>
+<p>The app does not ask for your name. Version 0.3.1 does not ask your age. The 19-or-older check exists only in the version that turns the AI reading on.</p>
+<p>The morning notification does not include the dream. The home-screen widget shows one dictionary line or a prompt to write, and never the dream text. Anyone who can see the home screen can read that one line. That display is not a transfer to the developer.</p>
+<p>The app lock uses the device's biometrics or screen lock. The app does not receive or store a fingerprint image or a biometric template.</p>
+<h3>3. Internet and permissions</h3>
+<p>Version 0.3.1 does not contact the developer's server. Subscription purchase and status are handled by Google Play on this device. Google Play collects the card number from you. The app does not receive or store a card number. Payment data Google handles follows the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The app asks for notification permission (<code>POST_NOTIFICATIONS</code>) when you turn the morning reminder on. The app lock uses biometrics (<code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code>). <code>RECEIVE_BOOT_COMPLETED</code> may be used to set the morning reminder again after a restart. WorkManager adds that permission. The Play Billing permission (<code>com.android.vending.BILLING</code>) and <code>ACCESS_NETWORK_STATE</code> come with the Google Play Billing library.</p>
+<p>If the store lists network access, that is the billing library or an <code>INTERNET</code> declaration still in the build. Version 0.3.1 does not use it to call the developer's server. The app does not use the advertising ID, location, contacts, camera, microphone, or photos. It does not start a foreground service or a full-screen intent.</p>
+<h3>4. Backup</h3>
+<p>The app does not upload the journal itself. Cloud backup excludes <code>dreams.db</code>, <code>dreams.db-wal</code>, <code>dreams.db-shm</code>, and <code>dream_billing_access.xml</code>. If Auto Backup is on, files that are not excluded (the settings DataStore, for example) may be included in your Google Account backup under the device's settings. The Android system performs that backup, and the developer cannot read the copy. Google keeps and deletes it under your backup settings and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>There is no separate device-to-device rule. Moving to a new phone can copy the journal along with the app. The developer cannot read that copy either.</p>
+<h3>5. Sharing, processors, and transfers abroad</h3>
+<p>In 0.3.1 the developer does not share personal information with a third party and does not appoint a processor. The developer sends no personal information abroad. Payment details are collected by Google Play directly from you, as section 3 says.</p>
+<h3>6. What the app does not do</h3>
+<ul><li>It has no ads. Information is not sold and is not used to build an advertising profile.</li><li>It does not create an account and does not ask you to sign in.</li><li>It has no analytics SDK and no crash-reporting SDK. Crashes are seen only in Play vitals.</li><li>It does not use the advertising ID, location, contacts, camera, microphone, or photos.</li><li>It does not receive a card number.</li><li>Version 0.3.1 does not send dream text, symbol lines, purchase tokens, or a device identifier to the developer's server.</li></ul>
+<h3>7. Deletion and your rights</h3>
+<ul><li>Deleting one dream removes that record from this device.</li><li>Settings → delete all records removes dreams on this device. This version has no server rows to delete.</li><li>Uninstalling removes this device's app data.</li><li>A copy made by Google backup or by a phone-to-phone transfer is managed in your Google Account and Android backup settings. The app cannot delete that copy.</li><li>You can ask to see, correct, delete, or stop the processing of your personal information. Dreams on the device are deleted in the app. Anything else goes to the email below. Unless another law requires the developer to keep it, a deletion request is not refused. If it cannot be accepted, the developer says why.</li></ul>
+<p>There is no personal information on paper. Electronic records are deleted so they cannot be restored.</p>
+<h3>8. Children</h3>
+<p>The app is not directed at children, and it does not knowingly collect personal information from children. It is not directed at children under the Google Play Families policy. It does not accept personal information from anyone under 14. The AI reading is not in this version. When it is turned on later, only people 19 and older can use it.</p>
+<h3>9. Safeguards</h3>
+<p>The journal stays in the app's private storage. Version 0.3.1 does not send it to the developer's server. The purchase token is not written to disk. Biometrics stay with the device lock. There is no ads, analytics, or crash-reporting SDK.</p>
+<h3>10. Changes</h3>
+<p>When this policy changes, the effective date changes. An important change is also noted in the app's update text. The version that turns the AI reading on is published only after the next section is rewritten as current behavior.</p>
+<h3>11. Contact</h3>
+<p>Privacy contact: Solodep</p>
+<p><a href="mailto:chuckchuck.lab+dream@gmail.com">chuckchuck.lab+dream@gmail.com</a></p>
+<h3>12. Complaints</h3>
+<p>You can also contact the authorities below. You may write to the contact in section 11 first.</p>
+<ul><li>Korea Internet &amp; Security Agency, personal-information infringement report center: 118 (no area code), <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li><li>Personal Information Dispute Mediation Committee: 1833-6972 (no area code), <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li></ul>
+<h3>When the AI reading is turned on (does not apply to 0.3.1)</h3>
+<p>This section describes a later version. Version 0.3.1 hides the AI reading, follow-up chat, and conception-dream mode, and it does not send the items below anywhere. When that version ships, this section becomes current behavior, and data safety, the content rating, and the store listing are updated with it.</p>
+<p>The AI reading is off by default. The first use shows what is sent and asks for consent. It opens only after you confirm that you are 19 or older. If you decline, or you are under 19, only AI stays closed. Writing and the dictionary reading still work.</p>
+<p>Only when AI is used does the following go to the developer's server. A name, an account, an email address, other dreams, the raw Android ID, and a card number are not sent.</p>
+<table>
+<tr><th>Sent</th><th>Not sent</th></tr>
+<tr><td>That dream's text (up to 2000 characters), chosen feelings, clarity, up to 12 matched symbol lines, lens order, conception-dream mode, locale, region code when present, the last 10 chat turns, the purchase token, the device-key hash</td><td>Name, account, email, other dreams, the raw Android ID, a card number</td></tr>
+</table>
+<p>The device key is the SHA-256 of <code>dream-free-v1:</code> plus the Android ID, as 64 lowercase hex characters. The raw Android ID is not sent. A status check sends only the purchase token and the device-key hash. Those two are not sent to OpenAI. The server passes the purchase token to the Google Play Developer API to check the subscription, and it does not store the raw token. It stores only the SHA-256 of the purchase token and of <code>linkedPurchaseToken</code>.</p>
+<p>The server is the Cloudflare Worker <code>dream-chat</code>. It calls OpenAI to write the answer. The model is <code>gpt-6-luna</code>, called with <code>store: false</code>. The server does not store dream text, symbol lines, the reading, or chat text. Logs do not contain that text. Logs are error codes only.</p>
+<p>If the text looks like self-harm or abuse, the server drops the model answer, returns help resources, and does not keep the charge. That text is not stored unless you report it. Korean contacts are 109, 1577-0199, 119, and 112. English contacts are 988 and findahelpline.com. If the locale is English and the region is KR, the Korean numbers come first.</p>
+<p><strong>Transfers abroad.</strong> These companies process data only when AI is on. Nothing is sent without consent. The basis is Article 28-8 (1) 3 of the Personal Information Protection Act (a processor needed to perform the contract). The transfer uses HTTPS.</p>
+<table>
+<tr><th>Recipient</th><th>Country</th><th>Items</th><th>Purpose</th><th>Retention</th></tr>
+<tr><td>Cloudflare, Inc., which runs the developer's server. privacyquestions@cloudflare.com</td><td>United States. A request may be handled at a nearby data center</td><td>Everything in the sent column</td><td>Purchase check, quota, forwarding the reading, keeping reports</td><td>Dream text and chat text are not stored. Reports are kept 90 days. Quota and token hashes are below</td></tr>
+<tr><td>OpenAI. dsar@openai.com</td><td>United States</td><td>Dream text, feelings, clarity, symbol lines, lens order, conception-dream mode, recent turns, locale. The purchase token and the device-key hash are not sent</td><td>Writing the answer. <code>gpt-6-luna</code>, <code>store: false</code></td><td>OpenAI's public note says API data is not used for training without consent. Abuse-monitoring logs may be kept up to 30 days by default, and longer when required. Zero Data Retention approval for this app has not been confirmed. <code>store: false</code> is not that approval</td></tr>
+</table>
+<p>What the server keeps:</p>
+<ul><li>A report's question (the dream text or the follow-up), answer, reason, and language are deleted after 90 days. The reasons are inaccurate, offensive, dangerous, and other. A deletion request removes them sooner.</li><li>A device key gets 3 free tries for its life. A valid subscription gets 20 tries every 24 hours from the first use. Those rows are deleted one year (365 days) after last use.</li><li>Token hashes are kept one year after a known expiry, or one year after the last check when the expiry is unknown. The raw token is not stored.</li><li>A successful purchase check is reused for 1 hour, and a failed one for 5 minutes. Cache rows older than 1 hour are deleted at cleanup.</li><li>The Seoul-day global counter is a number with no text, and it is deleted after that date.</li></ul>
+<p>Cleanup runs at 00:10 in Korea.</p>
+<p>Deletion:</p>
+<ul><li>Settings → "Delete AI history on this device" removes AI readings and chats stored on the device. The dreams stay. Server rows stay.</li><li>Settings → "Ask the server to forget my reports" calls <code>POST /v1/forget</code> and deletes reports, quota rows, and token hashes tied to this device key and the sent purchase tokens. It does not ask Play again. The 3 free tries can open again. Success does not require a row to exist.</li><li>Deleting every dream, and uninstalling, affect the device only. Server hashes and reports are removed by the request above or by email to <a href="mailto:chuckchuck.lab+dream@gmail.com">chuckchuck.lab+dream@gmail.com</a>.</li></ul>
+<p>The region code is used only to order crisis contacts. It is not stored as location. The text sent to the model includes a Region line only when a region code is present.</p>
+  </section>
+</body>
+</html>
